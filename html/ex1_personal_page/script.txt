@@ -4,10 +4,18 @@ favicon.io
 <link rel="favicon" href="./img/favicon.ico">
 
 2. CONTENT
-
 <h1>Fulano de Tal</h1>
 <p>desenvolvedor web</p>
 
-2. CSS Button Generator
-
+3. CSS Button Generator
 ccs3buttongenerator.com
+
+4. Codeply
+codeply.com
+
+5. Bootstrap
+<div class="navbar bg-dark">
+  <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" height="35">
+  <input type="button" class="btn btn-primary" value="Hello Class">
+</div>
+

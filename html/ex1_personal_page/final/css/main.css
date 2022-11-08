@@ -98,6 +98,12 @@ a:hover {
     margin: auto;
 }
 
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
 .contact-message {
     width: 40%;
     margin: 40px auto 60px;
