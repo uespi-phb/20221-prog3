@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo #1</title>
+    <style>
+        img {
+            background-color: brown;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/dice1.png" alt="DADO #1"/>
+</body>
+
+<script>
+    let number = 1
+
+    function diceClick() {
+        console.log('diceClock()')
+
+        number++
+        if (number > 6) {
+            number = 1
+        }    
+        
+        const dice = document.querySelector('img')
+        dice.src = 'images/dice' + number + '.png'
+    }
+
+    function onPageLoad() {
+        console.log('onPageLoad()')
+
+        const image = document.querySelector('img')
+        image.onclick = diceClick
+    }
+
+    window.onload = onPageLoad
+</script>
+
+</html>

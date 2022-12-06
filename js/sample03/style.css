@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#message-box {
+    width: 500px;
+    height: 100px;
+    background-color: darksalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    visibility: hidden;
+}
+
+#btn-show, #btn-hide {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo #4</title>
+</head>
+<body>
+    <main>
+        <h1>
+            Título
+            <span style="display: none;">texto do span #1</span>
+            <span style="display: none;">texto do span #2</span>
+        </h1>
+    </main>
+    <hr>
+    <div id="h1-props">
+
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const h1 = document.querySelector('h1')
+        
+        const props = document.querySelector("div")
+        props.innerText = "textContent: [" + h1.textContent + "]\n" +
+                          "innerText: [" + h1.innerText + "]\n" +
+                          "innerHTML: [" + h1.innerHTML + "]"
+    })
+</script>
+</html>
