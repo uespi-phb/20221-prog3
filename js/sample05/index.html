@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Dinâmica</title>
+</head>
+<body>
+    <div>
+        <label for="subject">Interesse:</label>
+        <input type="text" id="subject" name="subject">
+        <button>Adicionar</button> 
+    </div>
+    <ol id="subject-list">
+        <li>Shows</li>
+        <li>Filmes</li>
+    </ol>
+</body>
+<script>
+    window.onload = function () {
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', addSubject)
+    }
+
+    function addSubject() {
+        const subjectElem = document.querySelector('#subject')
+        const listElem = document.querySelector('#subject-list')
+        const listItem = document.createElement('li')
+
+        listItem.textContent = subjectElem.value
+        listElem.appendChild(listItem)
+        subjectElem.value = ''
+    }
+</script>
+</html>
