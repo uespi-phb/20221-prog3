@@ -1,0 +1,13 @@
+#form-user {
+    border: 2px solid skyblue;
+    border-radius: 4px;
+    background-color: lightskyblue;
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form div {
+    margin: 6px 0;
+}
+
