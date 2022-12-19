@@ -10,26 +10,28 @@
 </head>
 
 <body>
-    <div id="form-user">
-        <form name="form-user" method="get">
+    <div id="form-user-box">
+        <h4>Cadastro de Usuários</h4>
+        <form name="form-user" method="get" actiob="">
             <div>
-                <label for="user">Usuário: </label>
+                <label for="user">Usuário: </label><br>
                 <input id="user" type="text" name="user">
-                <span></span>
+                <span class="error"></span>
             </div>
             <div>
-                <label for="passwd">Senha: </label>
+                <label for="passwd">Senha: </label><br>
                 <input id="passwd" type="password" name="passwd">
-                <span></span>
+                <span class="error"></span>
             </div>
             <div>
-                <label for="email">E-mail: </label>
-                <input id="email" type="email" name="user">
-                <span></span>
+                <label for="email">E-mail: </label><br>
+                <input id="email" type="email" name="email">
+                <span class="error"></span>
             </div>
             <input id="btn-submit" type="submit" value="Cadastrar" name="submit">
         </form>
     </div>
 </body>
 <script src="./main.js"></script>
+
 </html>
